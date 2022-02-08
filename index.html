@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BMI CALCULATOR</title>
+	<link rel="stylesheet" href=style.css>
+</head>
+<body>
+  <div id="calci">
+	<h1 class="head">BMI CALCULATOR</h1>
+	<label class="weight"><b>Weight:</b></label>
+	<input type="text" id="weight" placeholder="Enter weight(kg)"></br></br>
+	<label class="height"><b>Height:</b></label>
+	<input type="text" id="height" placeholder="Enter height(cm)"></br></br>
+	<span class="span">
+	<button type="button" onClick="BMI()" id="calculate">calculate</button>
+    </span>
+    <p>YOUR BMI IS: <span id="span"></span></p>
+    <p id="weightcheck"></p>
+ </div>
+ <script>
+ 	function BMI()
+ 	{
+ 	var weight=document.getElementById("weight").value;
+ 	var height=document.getElementById("height").value;
+ 	var total=weight/Math.pow((height/100),2);
+ 	var total1=total.toFixed(2);
+ 	document.getElementById("span").innerHTML=total1;
+ 	if(total1<18.5)
+ 	{
+ 		document.getElementById("weightcheck").innerHTML="UNDER WEIGHT"
+ 	}
+ 	else if(total1>18.5 && total1<=24.9)
+ 	{
+ 		document.getElementById("weightcheck").innerHTML="NORMAL WEIGHT"
+ 	}
+ 	else if(total1>25 && total1<=29.9)
+ 	{
+ 		document.getElementById("weightcheck").innerHTML="OVER WEIGHT"
+ 	}
+ 	else if(total1>=30 && total1<=34.9)
+ 	{
+ 		document.getElementById("weightcheck").innerHTML="OBESE"
+ 	}
+ 	else
+ 	{
+ 		document.getElementById("weightcheck").innerHTML="EXTREMELY OBESE"
+ 	}
+ }
+ </script>
+	
+
+
+</body>
+</html>

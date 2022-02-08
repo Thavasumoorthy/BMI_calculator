@@ -1,0 +1,42 @@
+#calci{
+	margin-top: 150px;
+	margin-left: 450px;
+	margin-right: 500px;
+	border: 2px solid darkred;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	background-color: cyan;
+}
+.head{
+
+}
+
+.weight{
+	color: purple;
+	font-style:italic;
+	font-size: 20px;
+}
+.height{
+	color: purple;
+	font-style: italic;
+	font-size: 20px;
+}
+div>span{
+	padding-left: 100px;
+}
+#calculate{
+	font-size: 20px;
+}
+#span{
+	color:magenta;
+	font-size: 20px;
+	font-family:cursive;
+
+}
+#weightcheck
+{
+	color:magenta;
+	font-size: 20px;
+	font-family:cursive;
+}
